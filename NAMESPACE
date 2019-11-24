@@ -2,3 +2,4 @@
 
 export(runBiocCheck)
 export(useBiocManager)
+import(BiocManager)

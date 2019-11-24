@@ -7,6 +7,8 @@
 #'
 #' useBiocManager()
 #'
+#' @import BiocManager
+#'
 #' @export
 useBiocManager <- function() {
     if (!requireNamespace("BiocManager", quietly = TRUE))
