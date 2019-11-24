@@ -1,7 +1,7 @@
-Name: Install BiocManager
+Name: Use BiocManager
 Description: BiocManager is a Bioconductor package for accessing Bioconductor
     R packages
-Binding: installBiocManager
+Binding: useBiocManager
 Interactive: false
 
 Name: Run BiocCheck

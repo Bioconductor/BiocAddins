@@ -1,0 +1,15 @@
+#' BiocManager: The Bioconductor Package Manager
+#'
+#' Make Bioconductor packages available via BiocManager, ensuring
+#' proper versioning with the current R installation.
+#'
+#' @examples
+#'
+#' useBiocManager()
+#'
+#' @export
+useBiocManager <- function() {
+    if (!requireNamespace("BiocManager", quietly = TRUE))
+        utils::install.packages("BiocManager")
+    library(BiocManager)
+}
