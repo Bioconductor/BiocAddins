@@ -1,6 +1,5 @@
 Name: Use BiocManager
-Description: BiocManager is a Bioconductor package for accessing Bioconductor
-    R packages
+Description: BiocManager provides access to Bioconductor R packages
 Binding: useBiocManager
 Interactive: false
 

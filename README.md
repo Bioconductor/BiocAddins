@@ -1,2 +1,1 @@
-# BiocAddIns
-RStudio AddIns from Bioconductor
+vignettes/BiocAddins.Rmd
