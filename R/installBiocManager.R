@@ -1,13 +1,13 @@
-#' Install Bioconductor
+#' Install BiocManager, the Bioconductor package manager
 #'
 #' Make Bioconductor packages available via BiocManager
 #'
 #' @examples
 #'
-#' installBioconductor()
+#' installBiocManager()
 #'
 #' @export
-installBioconductor <- function() {
+installBiocManager <- function() {
     if (!requireNamespace("BiocManager", quietly = TRUE))
         utils::install.packages("BiocManager")
     else
