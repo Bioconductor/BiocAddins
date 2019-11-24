@@ -1,0 +1,75 @@
+---
+title: "Bioconductor Utilities as RStudio Addins"
+author:
+- name: Marcel Ramos
+  affiliation: Roswell Park Cancer Institute, Buffalo, NY
+date: "`r BiocStyle::doc_date()`"
+vignette: >
+  %\VignetteIndexEntry{Bioconductor Utilities as RStudio Addins}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+output: BiocStyle::html_document
+Package: BiocAddins
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Installation
+
+```{r setup, eval=FALSE}
+BiocManager::install("Bioconductor/BiocAddins")
+```
+
+# Utility functions
+
+## Installing Bioconductor
+
+Bioconductor uses BiocManager to distribute pacakges and manage Bioconductor
+versions. It is important for users to make use of BiocManager instead of
+`install.packages` in order to ensure proper package download.
+
+The RStudio Addin makes it easy for users to obtain and install `BiocManager`
+from CRAN.
+
+```{r,eval=FALSE}
+installBioconductor()
+```
+
+After installation of `BiocManager`, users may install a package via the
+`install` function:
+
+```{r,eval=FALSE}
+BiocManager::install("Biobase")
+```
+
+# Developer section
+
+## Run BiocCheck
+
+Developers can run BiocCheck quite easily with the RStudio Addin from the
+dropdown menu. It essentially runs:
+
+```{r, eval=FALSE}
+BiocCheck::BiocCheck()
+```
+
+We recommend using the following keyboard shortcut:
+
+<kbd> Ctrl </kbd> / <kbd> &#x2318; </kbd> (Mac) + <kbd> shift </kbd> + <kbd> C </kbd>
+
+## Installing devel
+
+Developers who wish to install the development version of Bioconductor can
+do so _after_ installing `BiocManager`:
+
+```{r, eval=FALSE}
+BiocManager::install(version = "devel")
+```
+
+Developers must ensure that the correct version of R is being used.
+For more information, please review the `BiocManager` package vignette.

@@ -1,0 +1,9 @@
+Name: Install Bioconductor
+Description: Installs BiocManager for access to Bioconductor packages
+Binding: installBioconductor
+Interactive: false
+
+Name: Run BiocCheck
+Description: Runs BiocCheck on the current Bioconductor package
+Binding: runBiocCheck
+Interactive: false
