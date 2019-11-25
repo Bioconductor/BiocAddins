@@ -27,17 +27,17 @@ BiocManager::install("Bioconductor/BiocAddins")
 
 # Utility functions
 
-## Installing Bioconductor
+## Installing BiocManager
 
 Bioconductor uses BiocManager to distribute pacakges and manage Bioconductor
 versions. It is important for users to make use of BiocManager instead of
-`install.packages` in order to ensure proper package download.
+`install.packages` in order to ensure proper package versioning.
 
 The RStudio Addin makes it easy for users to obtain and install `BiocManager`
 from CRAN.
 
 ```{r,eval=FALSE}
-installBioconductor()
+useBiocManager()
 ```
 
 After installation of `BiocManager`, users may install a package via the
