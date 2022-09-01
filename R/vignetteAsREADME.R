@@ -35,7 +35,7 @@ vignetteAsREADME <- function(pkgDir = ".", vignette, dir = "inst/scripts") {
     )
     temptext <- readLines(rmtemp)
     repline <- grep("vignettes/%s", fixed = TRUE, temptext)
-    temptext[repline] <- sprintf(repline, basename(vignette))
+    temptext[repline] <- sprintf(temptext[repline], basename(vignette))
 
     if (!dir.exists(dir))
         dir.create(dir, recursive = TRUE)
