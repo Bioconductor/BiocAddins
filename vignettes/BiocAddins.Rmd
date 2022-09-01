@@ -85,3 +85,10 @@ BiocManager::install(version = "devel")
 
 Developers must ensure that the correct version of R is being used.
 For more information, please review the `BiocManager` package vignette.
+
+## Session Info
+
+```{r}
+sessionInfo()
+```
+

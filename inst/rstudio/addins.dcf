@@ -12,3 +12,8 @@ Name: Bump Version
 Description: Perform a +1 patch version ('Z') bump
 Binding: bumpVersion
 Interactive: false
+
+Name: Vignette to README.md
+Description: Use a package's vignette as the README.md file
+Binding: vignetteAsREADME
+Interactive: false

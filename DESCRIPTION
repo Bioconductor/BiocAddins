@@ -1,6 +1,6 @@
 Package: BiocAddins
 Title: Bioconductor Addins for RStudio
-Version: 0.99.6
+Version: 0.99.7
 Authors@R: person(
     "Marcel", "Ramos", , "marcel.ramos@roswellpark.org",
     c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")
@@ -10,6 +10,7 @@ Description: BiocAddins makes running Bioconductor installation and checks
 Depends: R (>= 4.0.0)
 Imports: 
     BiocCheck,
+    BiocBaseUtils,
     BiocManager,
     desc,
     devtools,

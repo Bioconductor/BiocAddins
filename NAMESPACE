@@ -3,5 +3,7 @@
 export(bumpVersion)
 export(runBiocCheck)
 export(useBiocManager)
+export(vignetteAsREADME)
 import(BiocManager)
+importFrom(BiocBaseUtils,isScalarCharacter)
 importFrom(desc,desc)
