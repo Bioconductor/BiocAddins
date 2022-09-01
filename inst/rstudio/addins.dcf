@@ -7,3 +7,8 @@ Name: Run BiocCheck
 Description: Runs BiocCheck on the current Bioconductor package
 Binding: runBiocCheck
 Interactive: false
+
+Name: Bump Version
+Description: Perform a +1 patch version ('Z') bump
+Binding: bumpVersion
+Interactive: false

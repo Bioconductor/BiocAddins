@@ -7,7 +7,7 @@
 useBiocManager()
 }
 \description{
-Make Bioconductor packages available via BiocManager, ensuring
+Make Bioconductor packages available via \code{BiocManager}, ensuring
 proper versioning with the current R installation.
 }
 \examples{
