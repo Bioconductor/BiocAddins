@@ -92,8 +92,9 @@ sessionInfo()
 #> [1] stats     graphics  grDevices utils     datasets  methods   base     
 #> 
 #> loaded via a namespace (and not attached):
-#>  [1] compiler_4.2.1  magrittr_2.0.3  fastmap_1.1.0   cli_3.3.0      
-#>  [5] tools_4.2.1     htmltools_0.5.3 rstudioapi_0.14 yaml_2.3.5     
-#>  [9] stringi_1.7.8   rmarkdown_2.16  knitr_1.40      stringr_1.4.1  
-#> [13] xfun_0.32       digest_0.6.29   rlang_1.0.4     evaluate_0.16
+#>  [1] compiler_4.2.1   magrittr_2.0.3   fastmap_1.1.0    cli_3.3.0       
+#>  [5] tools_4.2.1      htmltools_0.5.3  rstudioapi_0.14  yaml_2.3.5      
+#>  [9] codetools_0.2-18 stringi_1.7.8    rmarkdown_2.16   knitr_1.40      
+#> [13] stringr_1.4.1    xfun_0.32        digest_0.6.29    rlang_1.0.4     
+#> [17] evaluate_0.16
 ```
