@@ -9,7 +9,7 @@ BiocManager::install("Bioconductor/BiocAddins")
 
 ## Installing BiocManager
 
-Bioconductor uses BiocManager to distribute pacakges and manage
+Bioconductor uses BiocManager to distribute packages and manage
 Bioconductor versions. It is important for users to make use of
 BiocManager instead of `install.packages` in order to ensure proper
 package versioning.
