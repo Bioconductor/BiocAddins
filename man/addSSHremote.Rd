@@ -32,7 +32,7 @@ in Bioconductor and have maintainer access.
 \examples{
 
 if (interactive()) {
-   addUpstream()
+   addSSHremote()
 }
 
 }
