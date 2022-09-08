@@ -24,7 +24,7 @@ vignetteAsREADME <- function(pkgDir = ".", vignette, dir = "inst/scripts") {
     pkgDir <- devtools::as.package(pkgDir)[["path"]]
     if (missing(vignette)) {
         vigs <- list.files(file.path(pkgDir, "vignettes"), full.names = TRUE)
-        rmds <- tolower(tools::file_ext(vig)) == "rmd"
+        rmds <- tolower(tools::file_ext(vigs)) == "rmd"
         vignette <- vigs[rmds]
     }
     if (!isScalarCharacter(vignette))
