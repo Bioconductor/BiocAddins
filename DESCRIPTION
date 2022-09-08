@@ -15,6 +15,7 @@ Imports:
     desc,
     devtools,
     utils
+Remotes: waldronlab/newsfeed
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true

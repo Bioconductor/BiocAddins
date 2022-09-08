@@ -2,6 +2,7 @@
 
 export(bumpVersion)
 export(runBiocCheck)
+export(updateNEWS)
 export(useBiocManager)
 export(vignetteAsREADME)
 import(BiocManager)

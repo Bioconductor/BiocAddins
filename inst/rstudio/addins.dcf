@@ -17,3 +17,8 @@ Name: Vignette to README.md
 Description: Use a package's vignette as the README.md file
 Binding: vignetteAsREADME
 Interactive: false
+
+Name: Git log to NEWS.md
+Description: Add the latest Git commit messages to the NEWS.md file
+Binding: updateNEWS
+Interactive: false
