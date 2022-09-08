@@ -4,7 +4,7 @@
     dpkg <- devtools::as.package(pkg)
     npaths <- file.path(dpkg[["path"]], .NEWS_LOCS)
     newlo <- file.exists(npaths)
-    if (sum(newlo) > 1)
+    if (sum(newlo) > 1 || sum(newlo) < 1)
         stop("Multiple NEWS files found in package folder")
     npaths[newlo]
 }
@@ -47,8 +47,10 @@ updateNEWS <- function(
         function(x) paste(tail(x, -1), collapse = " "),
         character(1L)
     )
-    last <- min(grep(git_log_pattern, commit_msgs, ignore.case = TRUE))
-    all <- commit_msgs[seq_len(last - 1)]
+    bumps <- grep(git_log_pattern, commit_msgs, ignore.case = TRUE)
+    start <- 1 %in% bumps + 1
+    last <- min(bumps[bumps > 1]) - 1
+    all <- commit_msgs[seq(start, last)]
     all <- paste("*", all)
 
     newnews <- unlist(append(newslines, all, firstheader))
