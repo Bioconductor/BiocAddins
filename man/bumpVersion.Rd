@@ -4,7 +4,7 @@
 \alias{bumpVersion}
 \title{Bump the current package's patch version}
 \usage{
-bumpVersion(pkgDir = ".")
+bumpVersion(pkgDir = ".", commit = getOption("BiocAddins.autocommit", TRUE))
 }
 \arguments{
 \item{pkgDir}{The package directory to be build usually the current working
@@ -13,6 +13,10 @@ directory (i.e., ".")}
 \description{
 Take the packages version number (x.y.z) and bump the \code{z} version of the
 package. This is also known as the 'patch' version.
+}
+\details{
+Set the option \code{options('BiocAddins.autocommit')} to \code{FALSE} to
+avoid automatic \code{DESCRIPTION} file commits.
 }
 \examples{
 
