@@ -32,8 +32,12 @@ addSSHremote <- function(
     system2(
         command = "git",
         args = paste(
-            "remote add", remote, ssh_loc, ":", slug, "/", pkg_name,
+            "remote add", remote, paste0(ssh_loc, ":", slug, "/", pkg_name),
             collapse = " "
         )
+    )
+    message("Success.")
+    system2(
+        command = "git", args = "remote -v"
     )
 }

@@ -22,3 +22,8 @@ Name: Git log to NEWS.md
 Description: Add the latest Git commit messages to the NEWS.md file
 Binding: updateNEWS
 Interactive: false
+
+Name: Add Upstream Remote
+Description: Uses git to add the upstream remote on git.bioconductor.org
+Binding: addSSHremote
+Interactive: false
