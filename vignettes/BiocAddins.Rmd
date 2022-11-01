@@ -29,7 +29,7 @@ BiocManager::install("Bioconductor/BiocAddins")
 
 ## Installing BiocManager
 
-Bioconductor uses BiocManager to distribute pacakges and manage Bioconductor
+Bioconductor uses BiocManager to distribute packages and manage Bioconductor
 versions. It is important for users to make use of BiocManager instead of
 `install.packages` in order to ensure proper package versioning.
 
@@ -62,6 +62,18 @@ We recommend using the following keyboard shortcut:
 
 <kbd> Ctrl </kbd> / <kbd> &#x2318; </kbd> (Mac) + <kbd> shift </kbd> + <kbd> C </kbd>
 
+## Version Bumps
+
+BiocAddins makes it easy to bump your package's version by running the
+`bumpVersion` function:
+
+```{r,eval=FALSE}
+bumpVersion()
+```
+
+Note that this will increase the `Z` version of the package by 1, a.k.a, the
+patch version.
+
 ## Installing devel
 
 Developers who wish to install the development version of Bioconductor can
@@ -73,3 +85,10 @@ BiocManager::install(version = "devel")
 
 Developers must ensure that the correct version of R is being used.
 For more information, please review the `BiocManager` package vignette.
+
+## Session Info
+
+```{r}
+sessionInfo()
+```
+

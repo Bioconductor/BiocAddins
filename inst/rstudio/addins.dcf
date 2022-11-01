@@ -7,3 +7,28 @@ Name: Run BiocCheck
 Description: Runs BiocCheck on the current Bioconductor package
 Binding: runBiocCheck
 Interactive: false
+
+Name: Bump Version
+Description: Perform a +1 patch version ('Z') bump
+Binding: bumpVersion
+Interactive: false
+
+Name: Vignette to README.md
+Description: Use a package's vignette as the README.md file
+Binding: vignetteAsREADME
+Interactive: false
+
+Name: Git log to NEWS.md
+Description: Add the latest Git commit messages to the NEWS.md file
+Binding: updateNEWS
+Interactive: false
+
+Name: Add Upstream Remote
+Description: Uses git to add the upstream remote on git.bioconductor.org
+Binding: addSSHremote
+Interactive: false
+
+Name: Use .Rproj
+Description: Creates an packageName.Rproj file from a template
+Binding: use_Rproj
+Interactive: false

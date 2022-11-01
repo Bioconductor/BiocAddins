@@ -2,18 +2,29 @@
 % Please edit documentation in R/runBiocCheck.R
 \name{runBiocCheck}
 \alias{runBiocCheck}
-\title{Shortcut for executing BiocCheck on the current package}
+\title{Shortcut for executing \code{BiocCheck} on the current package}
 \usage{
-runBiocCheck(pkgDir = ".", ...)
+runBiocCheck(pkgDir = ".", callr = TRUE, ...)
 }
 \arguments{
 \item{pkgDir}{The package directory to be build usually the current working
 directory (i.e., ".")}
 
-\item{...}{Additional arguments for BiocCheck}
+\item{callr}{logical(1) Whether to use \code{callr} to execute the check in
+a background R session. This is helpful for avoiding namespace collisions
+and adding objects to the current environment.}
+
+\item{...}{Additional arguments for \code{BiocCheck}}
 }
 \description{
-BiocCheck provides Bioconductor flavoured checks for
+\code{BiocCheck} provides Bioconductor flavored checks for
 your package. It provides recommendations for good
 practices.
+}
+\examples{
+
+if (interactive()) {
+    runBiocCheck()
+}
+
 }
