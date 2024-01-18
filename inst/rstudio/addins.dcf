@@ -32,3 +32,8 @@ Name: Create .Rproj
 Description: Creates an packageName.Rproj file from a template
 Binding: use_Rproj
 Interactive: false
+
+Name: Render README.md
+Description: rmarkdown::render README.md from README.Rmd
+Binding: reBuildREADMEmd
+Interactive: false
