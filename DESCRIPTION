@@ -1,6 +1,6 @@
 Package: BiocAddins
 Title: Bioconductor Addins for RStudio
-Version: 0.99.20
+Version: 0.99.21
 Authors@R: person(
     "Marcel", "Ramos", , "marcel.ramos@roswellpark.org",
     c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")
