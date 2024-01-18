@@ -12,7 +12,8 @@ directory (i.e., ".")}
 }
 \description{
 Take the packages version number (x.y.z) and bump the \code{z} version of the
-package. This is also known as the 'patch' version.
+package. This is also known as the 'patch' version. Note this function
+also updates the \code{Date} field in the \code{DESCRIPTION} file.
 }
 \details{
 Set the option \code{options('BiocAddins.autocommit')} to \code{FALSE} to
