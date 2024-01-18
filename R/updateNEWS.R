@@ -41,12 +41,8 @@ updateNEWS <- function(
     newslines <- readLines(newsfile)
     firstheader <- grep("^\\s*#", newslines) + 1
 
-    gitlog <- system2("git", args = "log --oneline", stdout = TRUE)
-    commit_msgs <- vapply(
-        strsplit(gitlog, "\\s"),
-        function(x) paste(tail(x, -1), collapse = " "),
-        character(1L)
-    )
+    gitlog <- gert::git_log()
+    commit_msgs <- gsub("\\n", "", gitlog[["message"]])
     bumps <- grep(git_log_pattern, commit_msgs, ignore.case = TRUE)
     start <- 1 %in% bumps + 1
     last <- min(bumps[bumps > 1]) - 1

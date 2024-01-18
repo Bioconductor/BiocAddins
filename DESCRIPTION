@@ -14,6 +14,7 @@ Imports:
     BiocManager,
     desc,
     devtools,
+    gert,
     utils
 Remotes: waldronlab/newsfeed
 License: Artistic-2.0

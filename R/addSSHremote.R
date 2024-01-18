@@ -29,15 +29,10 @@ addSSHremote <- function(
     slug = "packages"
 ) {
     pkg_name <- devtools::as.package(pkgDir)[["package"]]
-    system2(
-        command = "git",
-        args = paste(
-            "remote add", remote, paste0(ssh_loc, ":", slug, "/", pkg_name),
-            collapse = " "
-        )
+    gert::git_remote_add(
+        url = paste0(ssh_loc, ":", slug, "/", pkg_name),
+        name = remote
     )
     message("Success.")
-    system2(
-        command = "git", args = "remote -v"
-    )
+    gert::git_remote_list()
 }

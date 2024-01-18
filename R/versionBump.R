@@ -26,10 +26,9 @@ bumpVersion <-
     desc$set("Date", Sys.Date())
     desc$write()
     if (commit) {
-        system2("git", "add DESCRIPTION")
-        system2("git",
-            args = paste0("commit -m 'version bump ",
-                as.character(desc$get_version()), "'")
+        gert::git_add(files = "DESCRIPTION")
+        gert::git_commit(
+            message = paste0("version bump ", as.character(desc$get_version()))
         )
     }
 }
