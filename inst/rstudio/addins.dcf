@@ -10,7 +10,7 @@ Interactive: false
 
 Name: Bump Version
 Description: Perform a +1 patch version ('Z') bump
-Binding: bumpVersion
+Binding: versionBump
 Interactive: false
 
 Name: Vignette to README.md

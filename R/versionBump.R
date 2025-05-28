@@ -15,12 +15,12 @@
 #' @examples
 #'
 #' if (interactive()) {
-#'     bumpVersion()
+#'     versionBump()
 #' }
 #'
 #' @importFrom desc desc
 #' @export
-bumpVersion <-
+versionBump <-
     function(pkgDir = ".", commit = getOption('BiocAddins.autocommit', TRUE))
 {
     pkgPath <- devtools::as.package(pkgDir)[["path"]]
