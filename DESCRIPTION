@@ -5,8 +5,12 @@ Authors@R: person(
     "Marcel", "Ramos", , "marcel.ramos@sph.cuny.edu",
     c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")
   )
-Description: BiocAddins makes running Bioconductor installation and checks
-    easy and convenient
+Description: BiocAddins provides a set of RStudio Addins that make it easy
+    to work with Bioconductor. These Addins are developer centric and include
+    actions such as running BiocCheck, bumping package versions, and creating
+    Rproj files. Experimental Addins include using the vignette as a
+    README file, rendering the README from an RMarkdown file, and
+    updating the NEWS file from recent commits.
 Depends: R (>= 4.0.0)
 Imports: 
     BiocCheck,
