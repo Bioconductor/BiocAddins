@@ -1,2 +1,4 @@
 ^BiocAddins.Rproj$
 ^\.Rproj\.user$
+^.*\.Rproj$
+
