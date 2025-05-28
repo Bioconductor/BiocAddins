@@ -1,6 +1,6 @@
 Package: BiocAddins
 Title: Bioconductor Addins for RStudio
-Version: 0.99.23
+Version: 0.99.24
 Authors@R: person(
     "Marcel", "Ramos", , "marcel.ramos@sph.cuny.edu",
     c("aut", "cre"), c(ORCID = "0000-0002-3242-0582")
@@ -32,4 +32,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-Date: 2024-01-18
+Date: 2025-05-28
