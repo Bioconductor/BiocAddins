@@ -28,9 +28,9 @@ Description: Uses git to add the upstream remote on git.bioconductor.org
 Binding: addSSHremote
 Interactive: false
 
-Name: Create .Rproj
-Description: Creates an packageName.Rproj file from a template
-Binding: use_Rproj
+Name: Create & open .Rproj
+Description: Creates and opens an package.Rproj file from a template
+Binding: useRproj
 Interactive: false
 
 Name: Render README.md

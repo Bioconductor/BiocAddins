@@ -5,21 +5,26 @@
 #' @inheritParams addSSHremote
 #' @inheritParams base::files
 #'
+#' @importFrom rstudioapi openProject
+#'
 #' @examples
 #'
 #' if (interactive()) {
-#'    use_Rproj()
 #' }
+#' useRproj()
 #'
 #' @export
-use_Rproj <- function(pkgDir = ".", overwrite = FALSE) {
+useRproj <- function(pkgDir = ".", overwrite = FALSE) {
     pkg_name <- devtools::as.package(pkgDir)[["package"]]
     template <- system.file(
         "resources", "template.Rproj", package = "BiocAddins", mustWork = TRUE
     )
-    file.copy(
-        from = template,
-        to = file.path(pkgDir, paste0(pkg_name, ".Rproj")),
-        overwrite = overwrite
-    )
+    rproj_file <- file.path(pkgDir, paste0(pkg_name, ".Rproj"))
+    if (!file.exists(rproj_file))
+        file.copy(
+            from = template,
+            to = rproj_file,
+            overwrite = overwrite
+        )
+    rstudioapi::openProject(path = rproj_file)
 }

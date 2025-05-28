@@ -25,7 +25,7 @@ Take the last series of Git commit messages and append them to the NEWS.md
 file for updating.
 }
 \examples{
-
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 updateNEWS(pkgDir = ".", vpattern = "BiocAddins")
-
+\dontshow{\}) # examplesIf}
 }

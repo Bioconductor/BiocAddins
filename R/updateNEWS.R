@@ -22,8 +22,7 @@
 #' @param git_log_pattern The words that delimit the last version bump in the
 #'   package; by default either `version bump` or `bump version`.
 #'
-#' @examples
-#'
+#' @examplesIf interactive()
 #' updateNEWS(pkgDir = ".", vpattern = "BiocAddins")
 #'
 #' @export
