@@ -13,11 +13,8 @@
 #'
 #' @importFrom BiocBaseUtils isScalarCharacter
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#'     vignetteAsREADME()
-#' }
+#' @examplesIf interactive()
+#' vignetteAsREADME()
 #'
 #' @export
 vignetteAsREADME <- function(pkgDir = ".", vignette, dir = "inst/scripts") {

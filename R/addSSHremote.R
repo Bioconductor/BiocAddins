@@ -15,11 +15,8 @@
 #'   this is `packages` for Bioconductor and the username for GitHub
 #'   addresses
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#'    addSSHremote()
-#' }
+#' @examplesIf interactive()
+#' addSSHremote()
 #'
 #' @export
 addSSHremote <- function(

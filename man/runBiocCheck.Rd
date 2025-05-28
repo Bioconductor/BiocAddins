@@ -22,9 +22,7 @@ your package. It provides recommendations for good
 practices.
 }
 \examples{
-
-if (interactive()) {
-    runBiocCheck()
-}
-
+\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+runBiocCheck()
+\dontshow{\}) # examplesIf}
 }

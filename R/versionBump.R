@@ -12,13 +12,11 @@
 #' @param commit `logical(1)` whether to automatically commit the changes to
 #'   the `DESCRIPTION` file with `gert`. Defaults to `TRUE`.
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#'     versionBump()
-#' }
-#'
 #' @importFrom desc desc
+#'
+#' @examplesIf interactive()
+#' versionBump()
+#'
 #' @export
 versionBump <-
     function(pkgDir = ".", commit = getOption('BiocAddins.autocommit', TRUE))

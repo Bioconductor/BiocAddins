@@ -13,11 +13,8 @@
 #'
 #' @param ... Additional arguments for `BiocCheck`
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#'     runBiocCheck()
-#' }
+#' @examplesIf interactive()
+#' runBiocCheck()
 #'
 #' @export
 runBiocCheck <- function(pkgDir = ".", callr = TRUE, ...) {

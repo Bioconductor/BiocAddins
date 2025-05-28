@@ -8,11 +8,8 @@
 #' @param readme `character(1)` The path to the `README.Rmd` to be rendered into
 #'   the `README.md` file
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#'     reBuildREADMEmd()
-#' }
+#' @examplesIf interactive()
+#' reBuildREADMEmd()
 #'
 #' @export
 reBuildREADMEmd <- function(pkgDir = ".", readme, dir = "inst/scripts") {

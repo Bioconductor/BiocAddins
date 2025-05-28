@@ -7,10 +7,7 @@
 #'
 #' @importFrom rstudioapi openProject
 #'
-#' @examples
-#'
-#' if (interactive()) {
-#' }
+#' @examplesIf interactive()
 #' useRproj()
 #'
 #' @export
