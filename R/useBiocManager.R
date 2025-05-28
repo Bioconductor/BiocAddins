@@ -13,5 +13,5 @@
 useBiocManager <- function() {
     if (!requireNamespace("BiocManager", quietly = TRUE))
         utils::install.packages("BiocManager")
-    require("BiocManager")
+    requireNamespace("BiocManager")
 }
