@@ -24,7 +24,8 @@ versionBump <-
     pkgPath <- devtools::as.package(pkgDir)[["path"]]
     desc <- desc::desc(file = file.path(pkgPath, "DESCRIPTION"))
     desc$bump_version("patch")
-    desc$set("Date", Sys.Date())
+    if (!is.na(desc$get("Date")))
+        desc$set("Date", Sys.Date())
     desc$write()
     if (commit) {
         gert::git_add(files = "DESCRIPTION")
