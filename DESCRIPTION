@@ -23,11 +23,11 @@ Imports:
     utils
 License: Artistic-2.0
 Encoding: UTF-8
-RoxygenNote: 7.3.2
 Roxygen: list(markdown = TRUE)
 Suggests: 
     BiocStyle,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-Date: 2025-06-20
+Date: 2025-05-28
+Config/roxygen2/version: 8.0.0
