@@ -1,3 +1,5 @@
 ^BiocAddins.Rproj$
 ^\.Rproj\.user$
 
+^\.positai$
+^\.claude$
