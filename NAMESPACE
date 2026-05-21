@@ -3,7 +3,6 @@
 export(addSSHremote)
 export(reBuildREADMEmd)
 export(runBiocCheck)
-export(updateNEWS)
 export(useBiocManager)
 export(useRproj)
 export(versionBump)

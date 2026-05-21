@@ -10,7 +10,7 @@ Description: BiocAddins provides a set of RStudio Addins that make it easy
     actions such as running BiocCheck, bumping package versions, and creating
     Rproj files. Experimental Addins include using the vignette as a
     README file, rendering the README from an RMarkdown file, and
-    updating the NEWS file from recent commits.
+    other functionality.
 Depends: R (>= 4.0.0)
 Imports: 
     BiocCheck,
@@ -19,10 +19,8 @@ Imports:
     desc,
     devtools,
     gert,
-    newsfeed,
     rstudioapi,
     utils
-Remotes: waldronlab/newsfeed
 License: Artistic-2.0
 Encoding: UTF-8
 RoxygenNote: 7.3.2
