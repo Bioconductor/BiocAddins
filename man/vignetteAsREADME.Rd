@@ -21,7 +21,7 @@ Create an R Markdown file that takes the vignette and knits it as the
 \code{README.md} file
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 vignetteAsREADME()
 \dontshow{\}) # examplesIf}
 }

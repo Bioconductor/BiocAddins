@@ -23,7 +23,7 @@ Set the option \code{options('BiocAddins.autocommit')} to \code{FALSE} to
 avoid automatic \code{DESCRIPTION} file commits.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 versionBump()
 \dontshow{\}) # examplesIf}
 }

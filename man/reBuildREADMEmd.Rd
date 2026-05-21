@@ -21,7 +21,7 @@ This function rebuilds the \code{README.md} file  by running the command in the
 \code{README.Rmd} file.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 reBuildREADMEmd()
 \dontshow{\}) # examplesIf}
 }

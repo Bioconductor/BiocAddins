@@ -16,7 +16,7 @@ directory (i.e., ".")}
 This function creates an \verb{<pkgName>.Rproj} file with standard options.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 useRproj()
 \dontshow{\}) # examplesIf}
 }

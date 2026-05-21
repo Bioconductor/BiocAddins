@@ -30,7 +30,7 @@ Note that this function will only be of use for packages that are already
 in Bioconductor and have maintainer access.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 addSSHremote()
 \dontshow{\}) # examplesIf}
 }
